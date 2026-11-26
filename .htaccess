@@ -29,3 +29,9 @@ Options -Indexes
   Header set X-Frame-Options "SAMEORIGIN"
   Header set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>
+
+# Do not serve repo and build files
+<FilesMatch "^(README\.md|package\.json|\.gitignore)$">
+  Require all denied
+</FilesMatch>
+RedirectMatch 404 ^/scripts/
