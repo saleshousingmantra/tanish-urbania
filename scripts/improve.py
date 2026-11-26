@@ -236,7 +236,7 @@ def build_pages():
              "mainEntityOfPage": URL + path, "inLanguage": "en-IN", "articleSection": CATNAME,
              "author": {"@type": "Organization", "name": "Tanish Group", "url": URL + "/"},
              "publisher": {"@type": "Organization", "name": "Tanish Group", "logo": {"@type": "ImageObject", "url": URL + "/android-chrome-512x512.png"}},
-             "about": {"@id": URL + "/#complex"}},
+             "about": {"@id": URL + "/#project"}},
             {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": n, "item": URL + q} for i, (n, q) in enumerate([("Home", "/"), ("Blog", "/blog/"), (CATNAME, f"/blog/{CAT}/"), (g["h"], path)])]}]}
         t = re.sub(r'<script type="application/ld\+json">.*?</script>', lambda x: '<script type="application/ld+json">\n' + json.dumps(ld, ensure_ascii=False, indent=2) + "\n  </script>", t, count=1, flags=re.S)
         others = [o for o in ORDER if o != s]
@@ -364,7 +364,7 @@ def schema():
     t = rd("index.html"); pat = r'(<script type="application/ld\+json">)(.*?)(</script>)'
     m = re.search(pat, t, re.S); d = json.loads(m.group(2)); g = d["@graph"]
     for x in g:
-        if x.get("@type") == "ApartmentComplex" and "@id" not in x: x["@id"] = URL + "/#complex"
+        if x.get("@type") == "ApartmentComplex" and "@id" not in x: x["@id"] = URL + "/#project"
         if x.get("@type") == "Organization" and "@id" not in x: x["@id"] = URL + "/#org"
     have = {x.get("@id") for x in g}
     def img(n, f, cap):
@@ -386,7 +386,7 @@ def schema():
         if x.get("@type") == "ApartmentComplex" and "containedInPlace" not in x:
             x["containedInPlace"] = {"@id": URL + "/#place"}; x["image"] = [{"@id": i["@id"]} for i in imgs]
         if x.get("@type") == "WebPage" and "breadcrumb" not in x:
-            x["breadcrumb"] = {"@id": URL + "/#breadcrumb"}; x["about"] = {"@id": URL + "/#complex"}
+            x["breadcrumb"] = {"@id": URL + "/#breadcrumb"}; x["about"] = {"@id": URL + "/#project"}
     wr("index.html", t[:m.start()] + m.group(1) + json.dumps(d, ensure_ascii=False, indent=2) + m.group(3) + t[m.end():])
     # every guide: link the article to the project
     for f in glob.glob("blog/**/index.html", recursive=True):
@@ -394,7 +394,7 @@ def schema():
         if not mm: continue
         dd = json.loads(mm.group(2)); ch = False
         for x in dd.get("@graph", []):
-            if x.get("@type") == "BlogPosting" and "about" not in x: x["about"] = {"@id": URL + "/#complex"}; ch = True
+            if x.get("@type") == "BlogPosting" and "about" not in x: x["about"] = {"@id": URL + "/#project"}; ch = True
         if ch: wr(f, tt[:mm.start()] + mm.group(1) + json.dumps(dd, ensure_ascii=False, indent=2) + mm.group(3) + tt[mm.end():])
 
 def sitemap_xml():

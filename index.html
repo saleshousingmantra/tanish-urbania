@@ -44,7 +44,21 @@
       "slogan": "Going That Extra Mile",
       "url": "https://tanish-urbania.com/",
       "logo": "https://tanish-urbania.com/android-chrome-512x512.png",
-      "telephone": "+917264011256"
+      "telephone": "+917264011256",
+      "brand": {
+        "@id": "https://tanish-urbania.com/#brand"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "telephone": "+917264011256",
+        "areaServed": "IN",
+        "availableLanguage": [
+          "en",
+          "hi",
+          "mr"
+        ]
+      }
     },
     {
       "@type": "WebSite",
@@ -57,7 +71,10 @@
       }
     },
     {
-      "@type": "ApartmentComplex",
+      "@type": [
+        "ApartmentComplex",
+        "Residence"
+      ],
       "@id": "https://tanish-urbania.com/#project",
       "name": "Tanish Urbania",
       "description": "2 & 3 BHK Elite Homes by Tanish Group at Charholi, PCMC, near Ajinkya D.Y. Patil University. 720-980 sq ft. Launching soon. Get price and floor plans.",
@@ -82,11 +99,49 @@
         "streetAddress": "Near Ajinkya D.Y. Patil University, Charholi, PCMC, Pune"
       },
       "brand": {
-        "@id": "https://tanish-urbania.com/#developer"
+        "@id": "https://tanish-urbania.com/#brand"
       },
       "containedInPlace": {
         "@id": "https://tanish-urbania.com/#place"
-      }
+      },
+      "numberOfBuildings": 12,
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Residential wings",
+          "value": 12
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Architecture",
+          "value": "YW Architects"
+        }
+      ],
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Landscaped zones with well-distributed open areas",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Wing placement for open space, daylight and cross ventilation",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Generous balconies",
+          "value": true
+        }
+      ],
+      "containsPlace": [
+        {
+          "@id": "https://tanish-urbania.com/#apt-2-bhk-at-tanish-urbania"
+        },
+        {
+          "@id": "https://tanish-urbania.com/#apt-3-bhk-at-tanish-urbania"
+        }
+      ]
     },
     {
       "@type": "WebPage",
@@ -97,7 +152,7 @@
         "@id": "https://tanish-urbania.com/#website"
       },
       "about": {
-        "@id": "https://tanish-urbania.com/#complex"
+        "@id": "https://tanish-urbania.com/#project"
       },
       "inLanguage": "en-IN",
       "primaryImageOfPage": {
@@ -158,14 +213,86 @@
         {
           "@type": "ListItem",
           "position": 1,
+          "name": "Tanish Urbania 2 and 3 BHK homes: sizes and features",
+          "url": "https://tanish-urbania.com/blog/project/tanish-urbania-2-and-3-bhk-homes/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
           "name": "Tanish Urbania Charholi: project overview",
           "url": "https://tanish-urbania.com/blog/project/tanish-urbania-overview/"
         },
         {
           "@type": "ListItem",
-          "position": 2,
-          "name": "Tanish Urbania 2 and 3 BHK homes: sizes and features",
-          "url": "https://tanish-urbania.com/blog/project/tanish-urbania-2-and-3-bhk-homes/"
+          "position": 3,
+          "name": "2 BHK or 3 BHK: how to choose the right home",
+          "url": "https://tanish-urbania.com/blog/buying-guides/2-bhk-vs-3-bhk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "How planning for light and air improves daily life",
+          "url": "https://tanish-urbania.com/blog/buying-guides/light-and-ventilation-in-apartment-design/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "A checklist for buying a home before the launch",
+          "url": "https://tanish-urbania.com/blog/buying-guides/pre-launch-home-buying-checklist/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Investing in Charholi: prices, rents and what to check",
+          "url": "https://tanish-urbania.com/blog/investment/property-prices-and-rents/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Connectivity from Charholi: roads, metro, rail and airport",
+          "url": "https://tanish-urbania.com/blog/location-connectivity/roads-metro-rail-airport/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "Hospitals near Charholi, Pune",
+          "url": "https://tanish-urbania.com/blog/nearby-hospitals/hospitals-and-healthcare/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "Jobs and IT hubs near Charholi, Pune",
+          "url": "https://tanish-urbania.com/blog/nearby-it-hubs/jobs-and-employment-hubs/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "name": "Malls and shopping near Charholi, Pune",
+          "url": "https://tanish-urbania.com/blog/nearby-malls/malls-and-shopping/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "name": "Schools and colleges near Charholi, Pune",
+          "url": "https://tanish-urbania.com/blog/nearby-schools/schools-and-colleges/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "name": "Advantages of living in Charholi, Pune",
+          "url": "https://tanish-urbania.com/blog/overview/advantages-of-living-in-charholi/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 13,
+          "name": "Charholi, Pune: a locality overview for home buyers",
+          "url": "https://tanish-urbania.com/blog/overview/locality-overview/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 14,
+          "name": "Why Charholi is on every Pune home buyer’s radar",
+          "url": "https://tanish-urbania.com/blog/overview/why-buy-in-charholi/"
         }
       ]
     },
@@ -179,7 +306,57 @@
         "addressLocality": "Charholi, Pimpri-Chinchwad",
         "addressRegion": "Maharashtra",
         "addressCountry": "IN"
+      },
+      "containedInPlace": {
+        "@type": "City",
+        "name": "Pune",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Maharashtra",
+          "addressCountry": "IN"
+        }
       }
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://tanish-urbania.com/#brand",
+      "name": "Tanish Urbania",
+      "slogan": "Urban Life. Redefined.",
+      "logo": "https://tanish-urbania.com/android-chrome-512x512.png"
+    },
+    {
+      "@type": "Apartment",
+      "@id": "https://tanish-urbania.com/#apt-2-bhk-at-tanish-urbania",
+      "name": "2 BHK at Tanish Urbania",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "minValue": 720,
+        "maxValue": 770,
+        "unitCode": "FTK",
+        "unitText": "sq ft (approx.)"
+      },
+      "containedInPlace": {
+        "@id": "https://tanish-urbania.com/#project"
+      },
+      "numberOfBedrooms": 2,
+      "description": "2 BHK homes of approximately 720 to 770 sq ft with generous balconies, cross ventilation and daylight. Price on request."
+    },
+    {
+      "@type": "Apartment",
+      "@id": "https://tanish-urbania.com/#apt-3-bhk-at-tanish-urbania",
+      "name": "3 BHK at Tanish Urbania",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "minValue": 920,
+        "maxValue": 980,
+        "unitCode": "FTK",
+        "unitText": "sq ft (approx.)"
+      },
+      "containedInPlace": {
+        "@id": "https://tanish-urbania.com/#project"
+      },
+      "numberOfBedrooms": 3,
+      "description": "3 BHK homes of approximately 920 to 980 sq ft with spacious living, generous balconies, cross ventilation and daylight. Price on request."
     }
   ]
 }</script>
