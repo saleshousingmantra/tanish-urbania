@@ -109,10 +109,9 @@
   ]
 }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/cormorant-garamond-latin-1.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/inter-latin-3.woff2">
+  <link rel="stylesheet" href="/css/style.css?v=20261126a">
 </head>
 <body>
   <header class="site-header">
@@ -135,16 +134,16 @@
     <section class="blog-hero"><div class="container">
       <nav class="crumbs light" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a> / <span>Location &amp; Connectivity</span></nav>
       <p class="section-label">Category</p>
-      <h1>Location and Connectivity</h1>
+      <h1><span class="h1-brand">Tanish Urbania Charholi</span> Location and Connectivity</h1>
       <p class="lead">How well is Charholi connected? These articles explain the main roads, the Charholi-Lohegaon link, the nearest metro and railway stations and the distance to Pune International Airport, with the source for every figure.</p>
     </div></section>
     <section class="section"><div class="container">
-      <nav class="chips" aria-label="Blog categories"><a class="chip" href="/blog/">All</a><a class="chip" href="/blog/overview/">Pune &amp; Charholi Overview</a><a class="chip active" href="/blog/location-connectivity/">Location &amp; Connectivity</a><a class="chip" href="/blog/investment/">Investment</a><a class="chip" href="/blog/nearby-schools/">Nearby Schools &amp; Colleges</a><a class="chip" href="/blog/nearby-hospitals/">Nearby Hospitals</a><a class="chip" href="/blog/nearby-it-hubs/">Nearby Employment &amp; IT Hubs</a><a class="chip" href="/blog/nearby-malls/">Nearby Malls &amp; Shopping</a><a class="chip" href="/blog/buying-guides/">Buying Guides</a></nav>
+      <nav class="chips" aria-label="Blog categories"><a class="chip" href="/blog/">All</a><a class="chip" href="/blog/overview/">Pune &amp; Charholi Overview</a><a class="chip active" href="/blog/location-connectivity/">Location &amp; Connectivity</a><a class="chip" href="/blog/investment/">Investment</a><a class="chip" href="/blog/nearby-schools/">Nearby Schools &amp; Colleges</a><a class="chip" href="/blog/nearby-hospitals/">Nearby Hospitals</a><a class="chip" href="/blog/nearby-it-hubs/">Nearby Employment &amp; IT Hubs</a><a class="chip" href="/blog/nearby-malls/">Nearby Malls &amp; Shopping</a><a class="chip" href="/blog/buying-guides/">Buying Guides</a><a class="chip" href="/blog/project/">Project details</a>
       <div class="cat-intro"><p>Connectivity covers more than distance. It includes the roads you use every day, the nearest metro and railway stations, and how quickly you can reach the airport. Public sources report a metro station about 12 km from Charholi Budruk and a new road link that a 2024 news report says shortens the trip to the airport.</p><p>Because infrastructure timelines change, every article here dates its sources and asks you to confirm the current status.</p></div>
       <h2 class="h-sm">Articles in this category</h2>
       <div class="post-grid">
           <a class="post-card" href="/blog/location-connectivity/roads-metro-rail-airport/">
-            <picture><source type="image/webp" srcset="/images/elevation-1.webp"><img width="1084" height="494" src="/images/elevation-1.jpg" alt="Connectivity from Charholi: roads, metro, rail and airport" loading="lazy"></picture>
+            <picture><source type="image/webp" srcset="/images/elevation-1-640.webp 640w, /images/elevation-1.webp 1084w" sizes="(max-width: 700px) 86vw, 380px"><img width="1084" height="494" src="/images/elevation-1.jpg" alt="Tanish Urbania: connectivity from Charholi: roads, metro, rail and airport" loading="lazy"></picture>
             <div class="post-meta"><span class="tag">Location &amp; Connectivity</span><span>4 min read</span></div>
             <h3>Connectivity from Charholi: roads, metro, rail and airport</h3>
             <p>Roads, metro, rail and airport: what public sources say about reaching and leaving Charholi.</p>
@@ -164,12 +163,13 @@
     <div class="container">
       <img src="/images/logo-footer.png" alt="Tanish Urbania — Urban Life. Redefined." class="footer-logo" width="331" height="200" loading="lazy" decoding="async">
 <p class="footer-brand">Tanish Group &mdash; <em>Going That Extra Mile</em></p>
+      <nav class="footer-links" aria-label="Footer"><a href="/">Home</a><a href="/blog/">Guides</a><a href="/blog/project/">Project details</a><a href="/blog/project/tanish-urbania-2-and-3-bhk-homes/">2 &amp; 3 BHK homes</a><a href="/sitemap/">Site map</a></nav>
       <p class="disclaimer">Tanish Urbania is an upcoming project. Details, specifications, areas and images are indicative and subject to change. Articles are general information compiled from public sources, not financial or legal advice; distances are approximate. Please confirm RERA registration details with the sales team before booking.</p>
       <p class="copy">&copy; <span id="year">2026</span> Tanish Group. All rights reserved.</p>
     </div>
   </footer>
-  <script src="/config.js"></script>
-  <script src="/index.js"></script>
+  <script src="/config.js?v=20261126a" defer></script>
+  <script src="/index.js?v=20261126a" defer></script>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

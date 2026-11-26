@@ -140,10 +140,9 @@
   ]
 }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/cormorant-garamond-latin-1.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/inter-latin-3.woff2">
+  <link rel="stylesheet" href="/css/style.css?v=20261126a">
 </head>
 <body>
   <header class="site-header">
@@ -165,96 +164,108 @@
   <main class="blog-main">
     <section class="blog-hero"><div class="container">
       <p class="section-label">Blog</p>
-      <h1>Guides and insights</h1>
+      <h1><span class="h1-brand">Tanish Urbania Charholi</span> Guides and insights</h1>
       <p class="lead">Practical reading for anyone considering a home in Charholi, PCMC.</p>
     </div></section>
     <section class="section"><div class="container">
       <h2 class="h-sm">Browse by topic</h2>
-      <div class="cat-grid"><a class="cat-card" href="/blog/overview/"><h3>Pune &amp; Charholi Overview</h3><p>City and locality overview, landmarks and advantages</p><span class="count">3 articles</span></a><a class="cat-card" href="/blog/location-connectivity/"><h3>Location &amp; Connectivity</h3><p>Roads, metro, rail and airport access</p><span class="count">1 article</span></a><a class="cat-card" href="/blog/investment/"><h3>Investment</h3><p>Prices, rents and how to assess value</p><span class="count">1 article</span></a><a class="cat-card" href="/blog/nearby-schools/"><h3>Nearby Schools &amp; Colleges</h3><p>Schools and universities around Charholi</p><span class="count">1 article</span></a><a class="cat-card" href="/blog/nearby-hospitals/"><h3>Nearby Hospitals</h3><p>Hospitals and healthcare around Charholi</p><span class="count">1 article</span></a><a class="cat-card" href="/blog/nearby-it-hubs/"><h3>Nearby Employment &amp; IT Hubs</h3><p>Where residents work: industrial areas and IT parks</p><span class="count">1 article</span></a><a class="cat-card" href="/blog/nearby-malls/"><h3>Nearby Malls &amp; Shopping</h3><p>Malls and shopping options within reach</p><span class="count">1 article</span></a><a class="cat-card" href="/blog/buying-guides/"><h3>Buying Guides</h3><p>Practical guides for home buyers</p><span class="count">3 articles</span></a></div>
+      <div class="cat-grid"><a class="cat-card" href="/blog/project/"><h3>Tanish Urbania Project</h3><p>Overview, home sizes and features</p><span class="count">2 articles</span></a><a class="cat-card" href="/blog/overview/"><h3>Pune &amp; Charholi Overview</h3><p>City and locality overview, landmarks and advantages</p><span class="count">3 articles</span></a><a class="cat-card" href="/blog/location-connectivity/"><h3>Location &amp; Connectivity</h3><p>Roads, metro, rail and airport access</p><span class="count">1 article</span></a><a class="cat-card" href="/blog/investment/"><h3>Investment</h3><p>Prices, rents and how to assess value</p><span class="count">1 article</span></a><a class="cat-card" href="/blog/nearby-schools/"><h3>Nearby Schools &amp; Colleges</h3><p>Schools and universities around Charholi</p><span class="count">1 article</span></a><a class="cat-card" href="/blog/nearby-hospitals/"><h3>Nearby Hospitals</h3><p>Hospitals and healthcare around Charholi</p><span class="count">1 article</span></a><a class="cat-card" href="/blog/nearby-it-hubs/"><h3>Nearby Employment &amp; IT Hubs</h3><p>Where residents work: industrial areas and IT parks</p><span class="count">1 article</span></a><a class="cat-card" href="/blog/nearby-malls/"><h3>Nearby Malls &amp; Shopping</h3><p>Malls and shopping options within reach</p><span class="count">1 article</span></a><a class="cat-card" href="/blog/buying-guides/"><h3>Buying Guides</h3><p>Practical guides for home buyers</p><span class="count">3 articles</span></a></div>
     </div></section>
     <section class="section section-tint"><div class="container">
       <h2 class="h-sm">All articles</h2>
-      <nav class="chips" aria-label="Blog categories"><a class="chip active" href="/blog/">All</a><a class="chip" href="/blog/overview/">Pune &amp; Charholi Overview</a><a class="chip" href="/blog/location-connectivity/">Location &amp; Connectivity</a><a class="chip" href="/blog/investment/">Investment</a><a class="chip" href="/blog/nearby-schools/">Nearby Schools &amp; Colleges</a><a class="chip" href="/blog/nearby-hospitals/">Nearby Hospitals</a><a class="chip" href="/blog/nearby-it-hubs/">Nearby Employment &amp; IT Hubs</a><a class="chip" href="/blog/nearby-malls/">Nearby Malls &amp; Shopping</a><a class="chip" href="/blog/buying-guides/">Buying Guides</a></nav>
-      <div class="post-grid">
+      <nav class="chips" aria-label="Blog categories"><a class="chip active" href="/blog/">All</a><a class="chip" href="/blog/overview/">Pune &amp; Charholi Overview</a><a class="chip" href="/blog/location-connectivity/">Location &amp; Connectivity</a><a class="chip" href="/blog/investment/">Investment</a><a class="chip" href="/blog/nearby-schools/">Nearby Schools &amp; Colleges</a><a class="chip" href="/blog/nearby-hospitals/">Nearby Hospitals</a><a class="chip" href="/blog/nearby-it-hubs/">Nearby Employment &amp; IT Hubs</a><a class="chip" href="/blog/nearby-malls/">Nearby Malls &amp; Shopping</a><a class="chip" href="/blog/buying-guides/">Buying Guides</a><a class="chip" href="/blog/project/">Project details</a>
+      <div class="post-grid"><a class="post-card" href="/blog/project/tanish-urbania-overview/">
+            <picture><source type="image/webp" srcset="/images/aerial-1-640.webp 640w, /images/aerial-1.webp 1084w" sizes="(max-width: 700px) 86vw, 380px"><img width="1080" height="492" src="/images/aerial-1.jpg" alt="Tanish Urbania: aerial view of the residential wings in Charholi, Pune" loading="lazy"></picture>
+            <div class="post-meta"><span class="tag">Tanish Urbania Project</span><span>3 min read</span></div>
+            <h3>Tanish Urbania Charholi: project overview</h3>
+            <p>Everything about Tanish Urbania in Charholi in one place: the developer, the wings, the homes and the location.</p>
+            <span class="read-more">Read article &rarr;</span>
+          </a><a class="post-card" href="/blog/project/tanish-urbania-2-and-3-bhk-homes/">
+            <picture><source type="image/webp" srcset="/images/elevation-2-640.webp 640w, /images/elevation-2.webp 1080w" sizes="(max-width: 700px) 86vw, 380px"><img width="1080" height="492" src="/images/elevation-2.jpg" alt="Tanish Urbania: front elevation of the 2 and 3 BHK towers" loading="lazy"></picture>
+            <div class="post-meta"><span class="tag">Tanish Urbania Project</span><span>3 min read</span></div>
+            <h3>Tanish Urbania 2 and 3 BHK homes: sizes and features</h3>
+            <p>The two home types at Tanish Urbania, with approximate sizes, features and the questions to ask before you choose.</p>
+            <span class="read-more">Read article &rarr;</span>
+          </a>
           <a class="post-card" href="/blog/overview/locality-overview/">
-            <picture><source type="image/webp" srcset="/images/aerial-1.webp"><img width="1084" height="492" src="/images/aerial-1.jpg" alt="Charholi, Pune: a locality overview for home buyers" loading="lazy"></picture>
+            <picture><source type="image/webp" srcset="/images/aerial-1-640.webp 640w, /images/aerial-1.webp 1084w" sizes="(max-width: 700px) 86vw, 380px"><img width="1084" height="492" src="/images/aerial-1.jpg" alt="Tanish Urbania: charholi, Pune: a locality overview for home buyers" loading="lazy"></picture>
             <div class="post-meta"><span class="tag">Pune &amp; Charholi Overview</span><span>4 min read</span></div>
             <h3>Charholi, Pune: a locality overview for home buyers</h3>
             <p>Where Charholi sits in PCMC, what is around it and how the area is changing.</p>
             <span class="read-more">Read article &rarr;</span>
           </a>
           <a class="post-card" href="/blog/overview/advantages-of-living-in-charholi/">
-            <picture><source type="image/webp" srcset="/images/elevation-2.webp"><img width="1080" height="491" src="/images/elevation-2.jpg" alt="Advantages of living in Charholi, Pune" loading="lazy"></picture>
+            <picture><source type="image/webp" srcset="/images/elevation-2-640.webp 640w, /images/elevation-2.webp 1080w" sizes="(max-width: 700px) 86vw, 380px"><img width="1080" height="491" src="/images/elevation-2.jpg" alt="Tanish Urbania: advantages of living in Charholi, Pune" loading="lazy"></picture>
             <div class="post-meta"><span class="tag">Pune &amp; Charholi Overview</span><span>3 min read</span></div>
             <h3>Advantages of living in Charholi, Pune</h3>
             <p>Seven everyday advantages to weigh when considering a home in Charholi.</p>
             <span class="read-more">Read article &rarr;</span>
           </a>
           <a class="post-card" href="/blog/location-connectivity/roads-metro-rail-airport/">
-            <picture><source type="image/webp" srcset="/images/elevation-1.webp"><img width="1084" height="494" src="/images/elevation-1.jpg" alt="Connectivity from Charholi: roads, metro, rail and airport" loading="lazy"></picture>
+            <picture><source type="image/webp" srcset="/images/elevation-1-640.webp 640w, /images/elevation-1.webp 1084w" sizes="(max-width: 700px) 86vw, 380px"><img width="1084" height="494" src="/images/elevation-1.jpg" alt="Tanish Urbania: connectivity from Charholi: roads, metro, rail and airport" loading="lazy"></picture>
             <div class="post-meta"><span class="tag">Location &amp; Connectivity</span><span>4 min read</span></div>
             <h3>Connectivity from Charholi: roads, metro, rail and airport</h3>
             <p>Roads, metro, rail and airport: what public sources say about reaching and leaving Charholi.</p>
             <span class="read-more">Read article &rarr;</span>
           </a>
           <a class="post-card" href="/blog/investment/property-prices-and-rents/">
-            <picture><source type="image/webp" srcset="/images/aerial-2.webp"><img width="1080" height="492" src="/images/aerial-2.jpg" alt="Investing in Charholi: prices, rents and what to check" loading="lazy"></picture>
+            <picture><source type="image/webp" srcset="/images/aerial-2-640.webp 640w, /images/aerial-2.webp 1080w" sizes="(max-width: 700px) 86vw, 380px"><img width="1080" height="492" src="/images/aerial-2.jpg" alt="Tanish Urbania: investing in Charholi: prices, rents and what to check" loading="lazy"></picture>
             <div class="post-meta"><span class="tag">Investment</span><span>4 min read</span></div>
             <h3>Investing in Charholi: prices, rents and what to check</h3>
             <p>What listing portals report for prices and rents in Charholi, and how to judge value.</p>
             <span class="read-more">Read article &rarr;</span>
           </a>
           <a class="post-card" href="/blog/nearby-schools/schools-and-colleges/">
-            <picture><source type="image/webp" srcset="/images/courtyard.webp"><img width="1080" height="492" src="/images/courtyard.jpg" alt="Schools and colleges near Charholi, Pune" loading="lazy"></picture>
+            <picture><source type="image/webp" srcset="/images/courtyard-640.webp 640w, /images/courtyard.webp 1080w" sizes="(max-width: 700px) 86vw, 380px"><img width="1080" height="492" src="/images/courtyard.jpg" alt="Tanish Urbania: schools and colleges near Charholi, Pune" loading="lazy"></picture>
             <div class="post-meta"><span class="tag">Nearby Schools &amp; Colleges</span><span>4 min read</span></div>
             <h3>Schools and colleges near Charholi, Pune</h3>
             <p>Schools and universities reported around Charholi, with boards and approximate distances.</p>
             <span class="read-more">Read article &rarr;</span>
           </a>
           <a class="post-card" href="/blog/nearby-hospitals/hospitals-and-healthcare/">
-            <picture><source type="image/webp" srcset="/images/elevation-2.webp"><img width="1080" height="491" src="/images/elevation-2.jpg" alt="Hospitals near Charholi, Pune" loading="lazy"></picture>
+            <picture><source type="image/webp" srcset="/images/elevation-2-640.webp 640w, /images/elevation-2.webp 1080w" sizes="(max-width: 700px) 86vw, 380px"><img width="1080" height="491" src="/images/elevation-2.jpg" alt="Tanish Urbania: hospitals near Charholi, Pune" loading="lazy"></picture>
             <div class="post-meta"><span class="tag">Nearby Hospitals</span><span>3 min read</span></div>
             <h3>Hospitals near Charholi, Pune</h3>
             <p>Hospitals and maternity centres reported around Charholi Budruk and Alandi Road.</p>
             <span class="read-more">Read article &rarr;</span>
           </a>
           <a class="post-card" href="/blog/nearby-it-hubs/jobs-and-employment-hubs/">
-            <picture><source type="image/webp" srcset="/images/aerial-2.webp"><img width="1080" height="492" src="/images/aerial-2.jpg" alt="Jobs and IT hubs near Charholi, Pune" loading="lazy"></picture>
+            <picture><source type="image/webp" srcset="/images/aerial-2-640.webp 640w, /images/aerial-2.webp 1080w" sizes="(max-width: 700px) 86vw, 380px"><img width="1080" height="492" src="/images/aerial-2.jpg" alt="Tanish Urbania: jobs and IT hubs near Charholi, Pune" loading="lazy"></picture>
             <div class="post-meta"><span class="tag">Nearby Employment &amp; IT Hubs</span><span>3 min read</span></div>
             <h3>Jobs and IT hubs near Charholi, Pune</h3>
             <p>The industrial and business areas nearest Charholi, and how to check IT park commutes.</p>
             <span class="read-more">Read article &rarr;</span>
           </a>
           <a class="post-card" href="/blog/nearby-malls/malls-and-shopping/">
-            <picture><source type="image/webp" srcset="/images/courtyard.webp"><img width="1080" height="492" src="/images/courtyard.jpg" alt="Malls and shopping near Charholi, Pune" loading="lazy"></picture>
+            <picture><source type="image/webp" srcset="/images/courtyard-640.webp 640w, /images/courtyard.webp 1080w" sizes="(max-width: 700px) 86vw, 380px"><img width="1080" height="492" src="/images/courtyard.jpg" alt="Tanish Urbania: malls and shopping near Charholi, Pune" loading="lazy"></picture>
             <div class="post-meta"><span class="tag">Nearby Malls &amp; Shopping</span><span>3 min read</span></div>
             <h3>Malls and shopping near Charholi, Pune</h3>
             <p>The malls and shopping centres reported for Charholi, and how to plan trips to them.</p>
             <span class="read-more">Read article &rarr;</span>
           </a>
           <a class="post-card" href="/blog/overview/why-buy-in-charholi/">
-            <picture><source type="image/webp" srcset="/images/aerial-2.webp"><img width="1080" height="492" src="/images/aerial-2.jpg" alt="Why Charholi is on every Pune home buyer’s radar" loading="lazy"></picture>
+            <picture><source type="image/webp" srcset="/images/aerial-2-640.webp 640w, /images/aerial-2.webp 1080w" sizes="(max-width: 700px) 86vw, 380px"><img width="1080" height="492" src="/images/aerial-2.jpg" alt="Tanish Urbania: why Charholi is on every Pune home buyer’s radar" loading="lazy"></picture>
             <div class="post-meta"><span class="tag">Pune &amp; Charholi Overview</span><span>3 min read</span></div>
             <h3>Why Charholi is on every Pune home buyer’s radar</h3>
             <p>A look at what makes Charholi, near Ajinkya D.Y. Patil University, a practical address in PCMC.</p>
             <span class="read-more">Read article &rarr;</span>
           </a>
           <a class="post-card" href="/blog/buying-guides/2-bhk-vs-3-bhk/">
-            <picture><source type="image/webp" srcset="/images/elevation-2.webp"><img width="1080" height="491" src="/images/elevation-2.jpg" alt="2 BHK or 3 BHK: how to choose the right home" loading="lazy"></picture>
+            <picture><source type="image/webp" srcset="/images/elevation-2-640.webp 640w, /images/elevation-2.webp 1080w" sizes="(max-width: 700px) 86vw, 380px"><img width="1080" height="491" src="/images/elevation-2.jpg" alt="Tanish Urbania: 2 BHK or 3 BHK: how to choose the right home" loading="lazy"></picture>
             <div class="post-meta"><span class="tag">Buying Guides</span><span>3 min read</span></div>
             <h3>2 BHK or 3 BHK: how to choose the right home</h3>
             <p>Space, budget and how your family may grow: a simple way to compare the two configurations.</p>
             <span class="read-more">Read article &rarr;</span>
           </a>
           <a class="post-card" href="/blog/buying-guides/pre-launch-home-buying-checklist/">
-            <picture><source type="image/webp" srcset="/images/elevation-1.webp"><img width="1084" height="494" src="/images/elevation-1.jpg" alt="A checklist for buying a home before the launch" loading="lazy"></picture>
+            <picture><source type="image/webp" srcset="/images/elevation-1-640.webp 640w, /images/elevation-1.webp 1084w" sizes="(max-width: 700px) 86vw, 380px"><img width="1084" height="494" src="/images/elevation-1.jpg" alt="Tanish Urbania: a checklist for buying a home before the launch" loading="lazy"></picture>
             <div class="post-meta"><span class="tag">Buying Guides</span><span>4 min read</span></div>
             <h3>A checklist for buying a home before the launch</h3>
             <p>Six things to verify before you book a home in an upcoming project.</p>
             <span class="read-more">Read article &rarr;</span>
           </a>
           <a class="post-card" href="/blog/buying-guides/light-and-ventilation-in-apartment-design/">
-            <picture><source type="image/webp" srcset="/images/courtyard.webp"><img width="1080" height="492" src="/images/courtyard.jpg" alt="How planning for light and air improves daily life" loading="lazy"></picture>
+            <picture><source type="image/webp" srcset="/images/courtyard-640.webp 640w, /images/courtyard.webp 1080w" sizes="(max-width: 700px) 86vw, 380px"><img width="1080" height="492" src="/images/courtyard.jpg" alt="Tanish Urbania: how planning for light and air improves daily life" loading="lazy"></picture>
             <div class="post-meta"><span class="tag">Buying Guides</span><span>3 min read</span></div>
             <h3>How planning for light and air improves daily life</h3>
             <p>Why wing placement, balconies and open areas matter as much as the floor plan.</p>
@@ -267,12 +278,13 @@
     <div class="container">
       <img src="/images/logo-footer.png" alt="Tanish Urbania — Urban Life. Redefined." class="footer-logo" width="331" height="200" loading="lazy" decoding="async">
 <p class="footer-brand">Tanish Group &mdash; <em>Going That Extra Mile</em></p>
+      <nav class="footer-links" aria-label="Footer"><a href="/">Home</a><a href="/blog/">Guides</a><a href="/blog/project/">Project details</a><a href="/blog/project/tanish-urbania-2-and-3-bhk-homes/">2 &amp; 3 BHK homes</a><a href="/sitemap/">Site map</a></nav>
       <p class="disclaimer">Tanish Urbania is an upcoming project. Details, specifications, areas and images are indicative and subject to change. Articles are general information compiled from public sources, not financial or legal advice; distances are approximate. Please confirm RERA registration details with the sales team before booking.</p>
       <p class="copy">&copy; <span id="year">2026</span> Tanish Group. All rights reserved - Authorized Channel Partner | Registration No.: A52100044378..</p>
     </div>
   </footer>
-  <script src="/config.js"></script>
-  <script src="/index.js"></script>
+  <script src="/config.js?v=20261126a" defer></script>
+  <script src="/index.js?v=20261126a" defer></script>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

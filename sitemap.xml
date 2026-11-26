@@ -135,4 +135,20 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://tanish-urbania.com/sitemap/</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://tanish-urbania.com/blog/project/</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://tanish-urbania.com/blog/project/tanish-urbania-overview/</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://tanish-urbania.com/blog/project/tanish-urbania-2-and-3-bhk-homes/</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
 </urlset>

@@ -35,8 +35,7 @@
   <meta name="twitter:title" content="Light and Ventilation in Apartment Design | Tanish Urbania">
   <meta name="twitter:description" content="How wing placement, balconies and open areas improve daylight and cross ventilation in a modern residential community in Charholi, Pune.">
   <meta name="twitter:image" content="https://tanish-urbania.com/images/og-image.jpg">
-  <script type="application/ld+json">
-{
+  <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -61,6 +60,9 @@
           "@type": "ImageObject",
           "url": "https://tanish-urbania.com/android-chrome-512x512.png"
         }
+      },
+      "about": {
+        "@id": "https://tanish-urbania.com/#complex"
       }
     },
     {
@@ -93,12 +95,10 @@
       ]
     }
   ]
-}
-  </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+}</script>
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/cormorant-garamond-latin-1.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/inter-latin-3.woff2">
+  <link rel="stylesheet" href="/css/style.css?v=20261126a">
 </head>
 <body>
   <header class="site-header">
@@ -122,9 +122,9 @@
       <div class="container narrow">
         <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a> / <a href="/blog/buying-guides/">Buying Guides</a></nav>
         <div class="post-meta"><a class="tag" href="/blog/buying-guides/">Buying Guides</a><span>3 min read</span></div>
-        <h1>How planning for light and air improves daily life</h1>
+        <h1><span class="h1-brand">Tanish Urbania Charholi</span> How planning for light and air improves daily life</h1>
         <p class="byline">By <a href="/">Tanish Group</a> &middot; Published <time datetime="2026-09-25">25 September 2026</time> &middot; Updated <time datetime="2026-09-25">25 September 2026</time></p>
-        <picture><source type="image/webp" srcset="/images/courtyard.webp"><img class="article-img" fetchpriority="high" width="1080" height="492" src="/images/courtyard.jpg" alt="How planning for light and air improves daily life"></picture>
+        <picture><source type="image/webp" srcset="/images/courtyard-640.webp 640w, /images/courtyard.webp 1080w" sizes="(max-width: 800px) 100vw, 760px"><img class="article-img" fetchpriority="high" width="1080" height="492" src="/images/courtyard.jpg" alt="Tanish Urbania: how planning for light and air improves daily life"></picture>
         <div class="article-body"><p>A home can look good on a plan and still feel closed in. Light, air and open space depend on how the buildings are placed as much as on how each flat is laid out.</p><h2>Wing placement</h2><p>Tanish Urbania has 12 residential wings positioned to leave ample open space between them. That spacing helps daylight reach the homes and lets air move through the site.</p><h2>Balconies and cross ventilation</h2><p>Generous balconies extend the living space outdoors, and layouts planned for cross ventilation keep rooms fresher with less reliance on fans and air conditioning.</p><h2>Open and landscaped areas</h2><p>Well-distributed landscaped zones give residents somewhere to walk, sit and meet neighbours, while the master plan keeps a level of privacy for each home.</p><p>The design comes from YW Architects, with a modern language of clean geometry, vertical accents and balanced proportions.</p></div>
         <div class="cta-box">
           <h3>Interested in Tanish Urbania?</h3>
@@ -136,14 +136,14 @@
         <h2>Keep reading</h2>
         <div class="post-grid two">
           <a class="post-card" href="/blog/buying-guides/2-bhk-vs-3-bhk/">
-            <picture><source type="image/webp" srcset="/images/elevation-2.webp"><img width="1080" height="491" src="/images/elevation-2.jpg" alt="2 BHK or 3 BHK: how to choose the right home" loading="lazy"></picture>
+            <picture><source type="image/webp" srcset="/images/elevation-2-640.webp 640w, /images/elevation-2.webp 1080w" sizes="(max-width: 700px) 86vw, 380px"><img width="1080" height="491" src="/images/elevation-2.jpg" alt="Tanish Urbania: 2 BHK or 3 BHK: how to choose the right home" loading="lazy"></picture>
             <div class="post-meta"><span class="tag">Buying Guides</span><span>3 min read</span></div>
             <h3>2 BHK or 3 BHK: how to choose the right home</h3>
             <p>Space, budget and how your family may grow: a simple way to compare the two configurations.</p>
             <span class="read-more">Read article &rarr;</span>
           </a>
           <a class="post-card" href="/blog/buying-guides/pre-launch-home-buying-checklist/">
-            <picture><source type="image/webp" srcset="/images/elevation-1.webp"><img width="1084" height="494" src="/images/elevation-1.jpg" alt="A checklist for buying a home before the launch" loading="lazy"></picture>
+            <picture><source type="image/webp" srcset="/images/elevation-1-640.webp 640w, /images/elevation-1.webp 1084w" sizes="(max-width: 700px) 86vw, 380px"><img width="1084" height="494" src="/images/elevation-1.jpg" alt="Tanish Urbania: a checklist for buying a home before the launch" loading="lazy"></picture>
             <div class="post-meta"><span class="tag">Buying Guides</span><span>4 min read</span></div>
             <h3>A checklist for buying a home before the launch</h3>
             <p>Six things to verify before you book a home in an upcoming project.</p>
@@ -157,12 +157,13 @@
     <div class="container">
       <img src="/images/logo-footer.png" alt="Tanish Urbania — Urban Life. Redefined." class="footer-logo" width="331" height="200" loading="lazy" decoding="async">
 <p class="footer-brand">Tanish Group &mdash; <em>Going That Extra Mile</em></p>
+      <nav class="footer-links" aria-label="Footer"><a href="/">Home</a><a href="/blog/">Guides</a><a href="/blog/project/">Project details</a><a href="/blog/project/tanish-urbania-2-and-3-bhk-homes/">2 &amp; 3 BHK homes</a><a href="/sitemap/">Site map</a></nav>
       <p class="disclaimer">Tanish Urbania is an upcoming project. Details, specifications, areas and images are indicative and subject to change. Articles are general information compiled from public sources, not financial or legal advice; distances are approximate. Please confirm RERA registration details with the sales team before booking.</p>
       <p class="copy">&copy; <span id="year">2026</span> Tanish Group. All rights reserved.</p>
     </div>
   </footer>
-  <script src="/config.js"></script>
-  <script src="/index.js"></script>
+  <script src="/config.js?v=20261126a" defer></script>
+  <script src="/index.js?v=20261126a" defer></script>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
