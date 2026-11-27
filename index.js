@@ -275,17 +275,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* Auto-open the popup ONCE, 15 seconds after the page loads (or is
-     refreshed). It never re-opens by itself: if the visitor already
-     opened or closed it, or is typing in a form, it stays away. */
-  var AUTO_OPEN_DELAY_MS = 15000;
-  window.setTimeout(function () {
-    var a = document.activeElement;
-    var typing = a && /^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName);
-    if (modalOverlay && !modalOverlay.classList.contains('open') && !typing) {
-      openModal();
-    }
-  }, AUTO_OPEN_DELAY_MS);
+  /* The enquiry popup opens only when the visitor taps Enquire / Call / WhatsApp (no automatic popup). */
 
   /* =====================================================
      IMAGE LOAD SHIMMER
