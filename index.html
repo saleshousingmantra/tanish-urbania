@@ -427,7 +427,7 @@
   <link rel="preload" as="image" href="images/aerial-1.webp" imagesrcset="images/aerial-1-640.webp 640w, images/aerial-1.webp 1084w" imagesizes="100vw" type="image/webp" fetchpriority="high">
   <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/cormorant-garamond-latin-1.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/inter-latin-3.woff2">
-  <link rel="stylesheet" href="css/style.css?v=20261127a">
+  <link rel="stylesheet" href="css/style.css?v=20261127b">
 </head>
 <body>
 
@@ -676,9 +676,9 @@
             <div class="select-wrap">
               <select id="f-interest" name="interest" required>
                 <option value="" disabled selected>Select an option</option>
-                <option value="2 BHK">2 BHK (720&ndash;770 sq ft)</option>
-                <option value="3 BHK">3 BHK (920&ndash;980 sq ft)</option>
-                <option value="Not sure yet">Not sure yet</option>
+                <option value="2 BHK" data-sub="Approx. 720–770 sq ft">2 BHK</option>
+                <option value="3 BHK" data-sub="Approx. 920–980 sq ft">3 BHK</option>
+                <option value="Not sure yet" data-sub="We will help you choose">Not sure yet</option>
               </select>
             </div>
             <span class="field-error" id="f-interest-error" aria-live="polite"></span>
@@ -817,9 +817,9 @@
         <div class="select-wrap">
           <select id="modal-interest" name="interest" required>
             <option value="" disabled selected>Select an option</option>
-            <option value="2 BHK">2 BHK (720&ndash;770 sq ft)</option>
-            <option value="3 BHK">3 BHK (920&ndash;980 sq ft)</option>
-            <option value="Not sure yet">Not sure yet</option>
+            <option value="2 BHK" data-sub="Approx. 720–770 sq ft">2 BHK</option>
+            <option value="3 BHK" data-sub="Approx. 920–980 sq ft">3 BHK</option>
+            <option value="Not sure yet" data-sub="We will help you choose">Not sure yet</option>
           </select>
         </div>
         <span class="field-error" id="modal-interest-error" aria-live="polite"></span>
@@ -843,9 +843,10 @@
 
   <!-- Load order matters: SDK, config, form, index -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
-  <script src="config.js?v=20261127a" defer></script>
-  <script src="form.js?v=20261127a" defer></script>
-  <script src="index.js?v=20261127a" defer></script>
+  <script src="config.js?v=20261127b" defer></script>
+  <script src="form.js?v=20261127b" defer></script>
+  <script src="dropdown.js?v=20261127b" defer></script>
+  <script src="index.js?v=20261127b" defer></script>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   <script>
     (function () {

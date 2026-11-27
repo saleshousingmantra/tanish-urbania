@@ -178,6 +178,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (plan && modalInterest) {
       modalInterest.value = plan;
+      modalInterest.dispatchEvent(new Event('change', { bubbles: true }));
     }
 
     modalOverlay.classList.add('open');
