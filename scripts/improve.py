@@ -200,7 +200,7 @@ P["tanish-urbania-2-and-3-bhk-homes"] = dict(
     img="elevation-2", imgalt="Tanish Urbania: front elevation of the 2 and 3 BHK towers", tag="2 and 3 BHK homes", mins=3,
     t="Tanish Urbania 2 & 3 BHK Homes: Sizes & Features",
     h="Tanish Urbania 2 and 3 BHK homes: sizes and features",
-    d="Tanish Urbania, Charholi: 2 BHK approx. 720–770 sq ft and 3 BHK approx. 920–980 sq ft, with balconies, cross ventilation and daylight. Sizes and what to ask.",
+    d="Tanish Urbania, Charholi: 2 BHK approx. 720–770 sq ft and 3 BHK approx. 920–980 sq ft, with balconies, cross ventilation and daylight. Sizes and questions.",
     dek="The two home types at Tanish Urbania, with approximate sizes, features and the questions to ask before you choose.",
     body='''<p>Tanish Urbania offers two home types in Charholi, PCMC: 2 BHK and 3 BHK. Here is how they compare and what to ask the sales team before you decide.</p>
 <h2>Sizes at a glance</h2>
